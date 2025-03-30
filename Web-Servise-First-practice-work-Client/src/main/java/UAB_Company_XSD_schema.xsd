@@ -1,37 +1,41 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://www.example.org"
-            xmlns="http://www.example.org"
-            elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <xsd:element name="Company">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="Company_name" type="xsd:string"/>
-                <xsd:element name="Departments" type="DepartmentsType"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xsd:complexType name="DepartmentsType">
-        <xsd:sequence maxOccurs="unbounded">
-            <xsd:element name="Department_name" type="xsd:string"/>
-            <xsd:element name="Employs" type="EmploysType"/>
-        </xsd:sequence>
-    </xsd:complexType>
+    <xs:element name="Company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Company_name" type="xs:string"/>
+                <xs:element name="Departments" type="Departments_type"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
-    <xsd:complexType name="EmploysType">
-        <xsd:sequence maxOccurs="unbounded">
-            <xsd:element name="Emploee" type="EmploeeType"/>
-        </xsd:sequence>
-    </xsd:complexType>
+    <xs:complexType name="Departments_type">
+        <xs:sequence>
+            <xs:element name="Department" type="Department_type" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
 
-    <xsd:complexType name="EmploeeType">
-        <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
-            <xsd:element name="Surname" type="xsd:string"/>
-            <xsd:element name="age" type="xsd:integer"/>
-            <xsd:element name="position" type="xsd:string"/>
-        </xsd:sequence>
-    </xsd:complexType>
+    <xs:complexType name="Department_type">
+        <xs:sequence>
+            <xs:element name="Department_name" type="xs:string"/>
+            <xs:element name="Employs" type="Employs_type"/>
+        </xs:sequence>
+    </xs:complexType>
 
-</xsd:schema>
+    <xs:complexType name="Employs_type">
+        <xs:sequence>
+            <xs:element name="Emploee" type="Emploee_type" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Emploee_type">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="age" type="xs:integer"/>
+            <xs:element name="position" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

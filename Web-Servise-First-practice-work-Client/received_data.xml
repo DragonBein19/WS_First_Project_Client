@@ -1,4 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Company>
     <Company_name>IT company</Company_name>
+    <Departments>
+        <Department>
+            <Department_name>Development Department</Department_name>
+            <Employs>
+                <Emploee>
+                    <name>John</name>
+                    <Surname>Hock</Surname>
+                    <age>45</age>
+                    <position>Senior Developer</position>
+                </Emploee>
+                <Emploee>
+                    <name>Endru</name>
+                    <Surname>Edison</Surname>
+                    <age>44</age>
+                    <position>Middle Developer</position>
+                </Emploee>
+                <Emploee>
+                    <name>Dmitrij</name>
+                    <Surname>Kozlov</Surname>
+                    <age>25</age>
+                    <position>Junior Developer</position>
+                </Emploee>
+            </Employs>
+        </Department>
+        <Department>
+            <Department_name>Testing Department</Department_name>
+            <Employs>
+                <Emploee>
+                    <name>Marija</name>
+                    <Surname>Skvarnova</Surname>
+                    <age>29</age>
+                    <position>QA Engineer</position>
+                </Emploee>
+                <Emploee>
+                    <name>Alexey</name>
+                    <Surname>Smirnov</Surname>
+                    <age>25</age>
+                    <position>Automation QA</position>
+                </Emploee>
+            </Employs>
+        </Department>
+        <Department>
+            <Department_name>Analytics Department</Department_name>
+            <Employs>
+                <Emploee>
+                    <name>Sergey</name>
+                    <Surname>Vasilyev</Surname>
+                    <age>38</age>
+                    <position>Business Analyst</position>
+                </Emploee>
+                <Emploee>
+                    <name>Anna</name>
+                    <Surname>Krylova</Surname>
+                    <age>32</age>
+                    <position>Data Analyst</position>
+                </Emploee>
+                <Emploee>
+                    <name>Victor</name>
+                    <Surname>Pavlov</Surname>
+                    <age>29</age>
+                    <position>System Analyst</position>
+                </Emploee>
+            </Employs>
+        </Department>
+        <Department>
+            <Department_name>Marketing Department</Department_name>
+            <Employs>
+                <Emploee>
+                    <name>Ekaterina</name>
+                    <Surname>Sokolova</Surname>
+                    <age>31</age>
+                    <position>Marketing Manager</position>
+                </Emploee>
+                <Emploee>
+                    <name>Nikolay</name>
+                    <Surname>Andreev</Surname>
+                    <age>33</age>
+                    <position>SEO Specialist</position>
+                </Emploee>
+                <Emploee>
+                    <name>Elena</name>
+                    <Surname>Morozova</Surname>
+                    <age>26</age>
+                    <position>SMM Manager</position>
+                </Emploee>
+            </Employs>
+        </Department>
+        <Department>
+            <Department_name>HR and Recruitment Department</Department_name>
+            <Employs>
+                <Emploee>
+                    <name>Yulia</name>
+                    <Surname>Tikhonova</Surname>
+                    <age>35</age>
+                    <position>HR Manager</position>
+                </Emploee>
+                <Emploee>
+                    <name>Artem</name>
+                    <Surname>Vasilij</Surname>
+                    <age>30</age>
+                    <position>Recruiter</position>
+                </Emploee>
+                <Emploee>
+                    <name>Natalia</name>
+                    <Surname>Gromova</Surname>
+                    <age>37</age>
+                    <position>HR Business Partner</position>
+                </Emploee>
+            </Employs>
+        </Department>
+    </Departments>
 </Company>
